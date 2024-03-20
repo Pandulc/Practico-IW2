@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box; /* PARTE DEL SNIPET DEL PADDING */
+  font-size: 62.5%;
+  /* Reset para REMS - 62.5% = 10px de 16px*/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+} /* PADDING NO AFECTA AL ANCHO DEL ELEMENTO */
+
+/** Generales **/
+
+.contenedor {
+  width: 95%;
+  margin: auto;
+}
+
+/** Utilidades **/
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/** Botones **/
+.boton1 {
+  width: 100%;
+  height: 5rem;
+  background-color: #311b92;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/** Login **/
+
+.login img {
+  height: 10rem;
+  width: 12.8rem;
+  margin-top: 9rem;
+  margin-bottom: 11.3rem;
+  margin-left: 11rem;
+}
+
+.login input {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 5rem;
+  padding-left: 4.3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #fff7f7f7;
+  font-size: 1.5rem;
+}
+
+.login input:focus {
+  outline: none;
+  background-color: #33303f38;
+}
+
+.user {
+  background-image: url(../img/User.svg);
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  background-position: 0.7rem center;
+}
+
+.password {
+  background-image: url(../img/Password.svg);
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  background-position: 0.7rem center;
+}
+
+.recuperacion {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+}
+
+.recuperacion a {
+  text-decoration: none;
+  color: #1c1939;
+}
+
+.register {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.register a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1c1939;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
+  backdrop-filter: blur(8px); /* Aplicar filtro de desenfoque */
+  z-index: 9998; /* Por debajo del loader pero encima del contenido */
+  display: none; /* Oculto por defecto */
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
