@@ -32,7 +32,7 @@ boton.addEventListener('click', () =>{
         localStorage.setItem('monto', montoIngresadoNumero); // Guardo el monto para recuperarlo en la proxima pantalla
         
         setTimeout(() => {
-            window.location.href = "transferUnicaConfirmar.html";
+            window.location.href = "transferUnicaVerificacion.html";
         }, 100);
     }
 
