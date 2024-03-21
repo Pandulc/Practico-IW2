@@ -3,13 +3,16 @@ var user = document.querySelector('input[type="email"]');
 var password = document.querySelector('input[type="password"]');
 var loading = document.getElementById('loader')
 var overlay = document.getElementById('overlay')
+var mensajeError = document.getElementById('mensaje-error')
 
 user.addEventListener('input', () => {
     botonSubmit.disabled = false;
+    mensajeError.textContent = "";
   });
   
   password.addEventListener('input', () => {
     botonSubmit.disabled = false;
+    mensajeError.textContent = "";
   });
   
 
@@ -20,13 +23,13 @@ botonSubmit.addEventListener('click', () => {
 
     if (!user.value.includes('@gmail.com')) {
         botonSubmit.disabled = true;
-        alert('Ingrese un email válido');
+        mensajeError.textContent = "Ingrese un email valido."
         return false;
       }
     
       if (password.value.length < 8) {
         botonSubmit.disabled = true;
-        alert('Ingrese una contraseña válida (mínimo 8 caracteres)');
+        mensajeError.textContent = "Ingrese una contraseña válida (mínimo 8 caracteres)"
         return false;
       }
     
