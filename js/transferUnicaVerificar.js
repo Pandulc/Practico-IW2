@@ -6,5 +6,5 @@ monto.textContent = "ARS $ " + montoGuardado.toLocaleString('es-AR');
 
 boton.addEventListener('click', () => {
     event.preventDefault();
-    window.location.href('transferUnicaConfirmar.html');
+    window.location.href = 'transferUnicaConfirmacion.html';
 });

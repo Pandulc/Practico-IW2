@@ -59,7 +59,7 @@ html {
   font-size: 1.5rem;
 }
 
-/* HOME TRANSFERENCIAS */
+/* CONFIRMACION DE TRANSFERENCIA */
 
 /* HEADER */
 
@@ -125,6 +125,7 @@ html {
 
 .linea:nth-child(4) {
   left: 54%; /* Ajusta el espacio entre la segunda y tercera imagen */
+  background-color: #02bc8a;
 }
 
 .progreso .ready {
@@ -143,112 +144,61 @@ html {
   width: 3rem;
 }
 
-.saldo {
+#mensaje {
+  margin-top: 0.8rem;
+  margin-right: 2.3rem;
+  text-align: right;
+  color: #507cdd;
+}
+
+.transfer-unica p {
+  margin-top: 2.9rem;
+  font-size: 1.2rem;
+  color: #4d4d4d;
+}
+
+.transfer-unica p:last-of-type {
+  margin: 0;
+}
+
+.transfer-unica p span {
+  color: #311b92;
+}
+
+.metodos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 3rem;
-  padding: 1.5rem;
-  background-color: #5252ff;
-  height: 20rem;
-  color: #ffffff;
-  border-radius: 1.5rem;
-  text-align: center;
-}
-
-.dinero-disponible {
-  display: flex;
-  justify-content: space-between;
-  max-height: 4rem;
   align-items: center;
+  margin-top: 1rem;
 }
 
-.texto {
-  font-size: 1.2rem;
+.boton-metodo {
+  margin-top: 2rem;
+  display: block;
+  width: 24.5rem;
+  height: 4rem;
 }
 
-.monto {
-  font-size: 1.2rem;
-}
-
-.monto-ingresado {
+.boton {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.monto-ingresado input {
-  height: 4.2rem;
-  background-color: transparent;
-  border: none;
-  font-size: 4rem;
-  color: #ffffff;
-  text-align: center;
-}
-
-.monto-ingresado input:focus {
-  outline: none;
-}
-
-.monto-ingresado p {
-  font-size: 3.8rem;
-  color: #ffffff;
-  margin: 0;
-}
-
-.impuesto {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 2.4rem;
-  height: 3.5rem;
-  border-radius: 0.8rem;
-  padding: 0 0.5rem 0 0.5rem;
-  background-color: #507cdd33;
   color: #4d4d4d;
 }
 
-.imagen {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.boton img {
+  margin-right: 1rem;
 }
 
-.imagen p {
-  font-size: 1.2rem;
-  margin-left: 1rem;
-}
-
-.monto-impuesto {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  font-size: 1.2rem;
-}
-
-.comentario {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2.4rem;
-  height: 3.5rem;
-  padding: 0 0.5rem 0 0.5rem;
-  border-radius: 0.8rem;
-  background-color: #c4c4c433;
-}
-
-.comentario input {
-  background-color: transparent;
-  border: none;
+#img-mail {
   margin: 0;
-  width: 90%;
-  color: #4d4d4d;
 }
 
-.comentario input:focus {
-  outline: none;
+.whatsapp {
+  color: #507cdd;
 }
 
-.formulario button {
-  margin-top: 22rem;
+button {
+  margin-top: 27.5rem;
 }

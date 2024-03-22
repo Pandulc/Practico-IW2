@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinatario Unico</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/transferUnicaConfirmar.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="barra">
+        <a href="transferUnicaVerificacion.html">
+          <img src="img/atras.svg" alt="" />
+        </a>
+        <div class="logo">
+          <a href="homeTransferencia.html">
+            <img src="img/LogoMin.png" alt="" />
+            <p class="fw-700 montserrat">W I B O N D</p>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="contenedor">
+      <div class="transfer-unica">
+        <h1 class="fw-600 montserrat">Transferir Dinero</h1>
+
+        <div class="progreso">
+          <img class="ready" src="img/listo.svg" alt="listo.png" />
+          <div class="linea"></div>
+          <img class="ready" src="img/listo.svg" alt="listo.png" />
+          <div class="linea"></div>
+          <img class="edit" src="img/edit.png" alt="edit.png" />
+        </div>
+        <p id="mensaje" class="montserrat fw-600">¡Último paso!</p>
+
+        <p class="montserrat fw-600">
+          Necesitamos que <span>autorices</span> la transferencia.
+        </p>
+        <p class="montserrat fw-600">
+          Elegi a donde preferis recibir tu codigo de verificacion.
+        </p>
+        <div class="metodos">
+          <button class="boton-metodo">
+            <div class="boton montserrat fw-600">
+              <img id="img-mail" src="img/mail.svg" alt="mail.png" />
+              Email
+            </div>
+          </button>
+          <button class="boton-metodo">
+            <div class="boton whatsapp montserrat fw-600">
+              <img src="img/wpp.svg" alt="whatsapp.png" />
+              WhatsApp
+            </div>
+          </button>
+          <button class="boton-metodo">
+            <div class="boton montserrat fw-600">
+              <img src="img/mensajeWpp.svg" alt="sms.png" />
+              SMS
+            </div>
+          </button>
+        </div>
+      </div>
+      <button class="boton1 fw-700 montserrat" type="submit">Siguiente</button>
+    </main>
+  </body>
+</html>

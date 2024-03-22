@@ -59,7 +59,7 @@ html {
   font-size: 1.5rem;
 }
 
-/* HOME TRANSFERENCIAS */
+/* CONFIRMACION DE DESTINATARIO */
 
 /* HEADER */
 
@@ -144,6 +144,7 @@ html {
 
 #mensaje {
   margin-top: 2rem;
+  color: #4d4d4d;
 }
 
 .formulario {
@@ -174,6 +175,7 @@ html {
   flex-direction: column;
   height: 13rem;
   padding: 0 1.5rem;
+  color: #4d4d4d;
 }
 
 .datos-cuenta {

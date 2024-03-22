@@ -171,6 +171,7 @@ html {
   border: 1px solid #a0a0a08f;
   border-radius: 2rem;
   box-shadow: 0px 0px 15px #00000040;
+  color: #4d4d4d;
 }
 
 .tipo-transfer {
@@ -195,6 +196,7 @@ html {
 .formulario p {
   margin-top: 3rem;
   font-size: 1.2rem;
+  color: #4d4d4d;
 }
 
 .destinatario {
@@ -206,6 +208,7 @@ html {
   border-radius: 0.5rem;
   background-color: #fff7f7f7;
   font-size: 1.5rem;
+  color: #535353;
 
   background-image: url(../img/User.svg);
   background-repeat: no-repeat;
