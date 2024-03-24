@@ -73,13 +73,13 @@ html {
   padding-left: 4.3rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: #fff7f7f7;
+  background-color: #f7f7f7;
   font-size: 1.5rem;
 }
 
 .login input:focus {
   outline: none;
-  background-color: #33303f38;
+  background-color: #303f9f33;
 }
 
 .user {

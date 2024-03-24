@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinatario Multiple</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/transferMultiple.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="barra">
+        <a href="homeTransferencia.html">
+          <img src="img/atras.svg" alt="" />
+        </a>
+        <div class="logo">
+          <a href="homeTransferencia.html">
+            <img src="img/LogoMin.png" alt="" />
+            <p class="fw-700 montserrat">W I B O N D</p>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="contenedor">
+      <div class="transfer-multiple">
+        <h1 class="fw-600 montserrat">Transferir Dinero</h1>
+        <div class="progreso">
+          <img class="edit" src="img/edit.png" alt="edit.png" />
+          <div class="linea"></div>
+          <img class="more" src="img/more-horizontal.png" alt="more.png" />
+          <div class="linea"></div>
+          <img class="more" src="img/more-horizontal.png" alt="more.png" />
+        </div>
+        <p class="montserrat fw-600">
+          Completa los datos en la planilla de transferencia y sube el archivo
+          para continuar.
+        </p>
+        <div class="opciones">
+          <button class="subir-archivo">
+            <div class="boton montserrat fw-500">
+              <img src="img/upload.svg" alt="upload.png" />
+              Subir Archivo
+            </div>
+          </button>
+          <button class="descargar-archivo">
+            <div class="boton montserrat fw-500">
+              <img src="img/download.svg" alt="download.png" />
+              Descargar Planilla
+            </div>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <section class="contenedor informacion">
+      <div id="panel" class="panel">
+        <div class="barra-panel">
+          <p class="montserrat fw-600">
+            ¿Primera vez usando transferencias múltiples?
+          </p>
+          <button id="boton-desplegar"></button>
+        </div>
+        <div class="desplegable">
+          <ol>
+            <li><p>Descarga la planilla en tu dispositivo</p></li>
+            <li>
+              <p>
+                Completa con los datos de tus personas destinatarias. ¡No
+                olvides indicar los montos para cada uno!
+              </p>
+            </li>
+            <li><p>Guarda el documento con la información nueva</p></li>
+            <li>
+              <p>
+                Carga la planilla haciendo click en el botón “Subir archivo” ¡Y
+                listo!
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <div class="contenedor">
+      <button
+        id="boton-siguiente"
+        class="boton1 fw-700 montserrat"
+        type="submit"
+      >
+        Siguiente
+      </button>
+    </div>
+
+    <script src="js/transferMultiple.js"></script>
+  </body>
+</html>

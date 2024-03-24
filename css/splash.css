@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box; /* PARTE DEL SNIPET DEL PADDING */
+  font-size: 62.5%;
+  /* Reset para REMS - 62.5% = 10px de 16px*/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+} /* PADDING NO AFECTA AL ANCHO DEL ELEMENTO */
+
+/** SPLASH SCREEN **/
+
+#fondo {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: -1;
+}
+
+#vector {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 22rem;
+  background-image: url("../img/vector.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: aparecer-vector 2s ease-in-out forwards;
+}
+
+#logo {
+  display: none;
+  position: absolute;
+  width: 25.5rem;
+  height: 18.7rem;
+  background-image: url("../img/Logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: aparecer-logo 2s ease-in-out forwards;
+}
+
+@keyframes aparecer-vector {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer-logo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -4,63 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wibond</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/login.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/splash.css" />
   </head>
-
   <body>
-    <div class="contenedor">
-      <div class="login">
-        <img src="img/Logo.png" alt="logo.png" />
+    <div id="fondo"></div>
+    <div id="vector"></div>
+    <div id="logo"></div>
 
-        <!-- FORMULARIO DE LOGIN -->
-
-        <form>
-          <input
-            id="campo-user"
-            class="user lato fw-400"
-            type="email"
-            placeholder="Usuario"
-          />
-          <input
-            id="campo-password"
-            class="password lato fw-400"
-            type="password"
-            placeholder="Contraseña"
-            minlength="8"
-          />
-          <div class="recuperacion">
-            <a class="lato fw-500" href="#">Olvidaste tu contraseña?</a>
-          </div>
-
-          <div id="mensaje-error" class="fw-700 lato"></div>
-
-          <button class="boton1 fw-700 montserrat" type="submit">
-            Iniciar Sesion
-          </button>
-        </form>
-
-        <div class="register lato fw-400 center-text">
-          <p>No tenes una cuenta? - <a href="#">Registrate</a></p>
-        </div>
-      </div>
-
-      <!-- EFECTO DE CARGA -->
-
-      <div id="overlay" class="overlay"></div>
-      <div id="loader" class="loading">
-        <img src="img/carga.gif" alt="cargando..." />
-      </div>
-    </div>
-
-    <script src="/js/login.js"></script>
+    <script src="/js/splash.js"></script>
   </body>
 </html>
