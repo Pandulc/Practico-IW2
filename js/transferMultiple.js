@@ -1,6 +1,12 @@
 var panel = document.getElementById('panel');
 var boton = document.getElementById('boton-desplegar');
+var botonSubir = document.getElementById('subir-archivo');
 var botonSig = document.getElementById('boton-siguiente');
+
+botonSubir.addEventListener('click', () =>{
+    event.preventDefault();
+    botonSig.style.backgroundColor = '#311b92';
+});
 
 boton.addEventListener('click', () =>{
     var estiloBoton = window.getComputedStyle(boton)

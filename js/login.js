@@ -6,14 +6,21 @@ var overlay = document.getElementById('overlay')
 var mensajeError = document.getElementById('mensaje-error')
 
 user.addEventListener('input', () => {
-    botonSubmit.disabled = false;
-    mensajeError.textContent = "";
+    checkInputs();
   });
   
   password.addEventListener('input', () => {
-    botonSubmit.disabled = false;
-    mensajeError.textContent = "";
+    checkInputs();
   });
+
+checkInputs = () => {
+    
+    if (user.value.includes('@gmail.com') && password.value.length >= 8) {
+      botonSubmit.style.backgroundColor = '#311b92';
+    } else {
+      botonSubmit.style.backgroundColor = '#7e6ec5';
+    }
+}
   
 
 botonSubmit.addEventListener('click', () => {
@@ -22,13 +29,13 @@ botonSubmit.addEventListener('click', () => {
 
 
     if (!user.value.includes('@gmail.com')) {
-        botonSubmit.disabled = true;
+        
         mensajeError.textContent = "Ingrese un email valido."
         return false;
       }
     
       if (password.value.length < 8) {
-        botonSubmit.disabled = true;
+        
         mensajeError.textContent = "Ingrese una contraseña válida (mínimo 8 caracteres)"
         return false;
       }
@@ -36,13 +43,13 @@ botonSubmit.addEventListener('click', () => {
     loader.style.display = 'block';
     overlay.style.display = 'block';
     
+    
     // Guardar datos en localStorage
     localStorage.setItem('user', user.value);
     // Opcionalmente, puedes encriptar la contraseña antes de guardarla
     localStorage.setItem('password', password.value);
     
     setTimeout(() => {
-        botonSubmit.disabled = false;
         loader.style.display = 'none';
         overlay.style.display = 'none';
         window.location.href = "homeTransferencia.html"

@@ -50,7 +50,7 @@ html {
 .boton1 {
   width: 100%;
   height: 5rem;
-  background-color: #311b92;
+  background-color: #7e6ec5;
   color: #ffffff;
   border-radius: 0.5rem;
   border: none;
@@ -104,10 +104,21 @@ html {
 .saldo {
   margin-top: 3rem;
   padding: 1.5rem;
+  background-image: url(../img/elipseFondo.svg);
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  background-position: -30%;
   background-color: #5252ff;
   height: 12rem;
   color: #ffffff;
   border-radius: 1.5rem;
+}
+
+.saldo img {
+  position: absolute;
+  left: -12%;
+  height: 13rem;
+  margin-top: -1.6rem;
 }
 
 .texto {

@@ -13,13 +13,15 @@ montoIngresado.addEventListener('input', () =>{
 });
 
 montoIngresado.addEventListener('keyup', () =>{
-    
+
     if(montoIngresado.value == ""){
         // Si el valor es vacio, es decir, borre todo lo que habia escrito, vuelvo a poner el tamanio default
         montoIngresado.style.width = ((montoIngresado.value.length + 2.2) * 38) + 'px';
+        boton.style.backgroundColor = '#7e6ec5';
     }
     else{
         impuesto.textContent = (montoIngresado.value * 0.21).toFixed(2);
+        boton.style.backgroundColor = '#311b92';
     }
     
 });

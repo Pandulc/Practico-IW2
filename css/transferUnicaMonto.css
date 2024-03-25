@@ -50,7 +50,7 @@ html {
 .boton1 {
   width: 100%;
   height: 5rem;
-  background-color: #311b92;
+  background-color: #7e6ec5;
   color: #ffffff;
   border-radius: 0.5rem;
   border: none;
@@ -149,11 +149,22 @@ html {
   justify-content: space-between;
   margin-top: 3rem;
   padding: 1.5rem;
+  background-image: url(../img/elipseFondoGrande.svg);
+  background-repeat: no-repeat;
+  background-size: 18rem;
+  background-position: -10% -50%;
   background-color: #5252ff;
   height: 20rem;
   color: #ffffff;
   border-radius: 1.5rem;
   text-align: center;
+}
+
+.saldo img {
+  position: absolute;
+  left: -0.2%;
+  height: 12.5rem;
+  margin-top: -1.7rem;
 }
 
 .dinero-disponible {
