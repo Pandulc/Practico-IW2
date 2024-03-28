@@ -109,14 +109,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .boton-metodo {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: block;
   width: 24.5rem;
   height: 4rem;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
 }
 
 .boton {

@@ -1,0 +1,106 @@
+html {
+  font-size: 62.5%;
+  /* Reset para REMS - 62.5% = 10px de 16px*/
+}
+
+/** Generales **/
+header {
+  max-height: 8rem;
+}
+
+.container {
+  max-width: 95%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+/** Barra de Progreso **/
+
+.progreso {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 2.5rem 0 4rem 0;
+}
+
+.linea {
+  position: absolute;
+  top: 50%;
+  width: 25%; /* La mitad del espacio entre las imágenes */
+  height: 0.3rem; /* Grosor de la línea */
+  background-color: #d7d8da; /* Color de la línea */
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.linea:nth-child(2) {
+  left: 21%; /* Ajusta el espacio entre la primera y segunda imagen */
+  background-color: #02bc8a;
+}
+
+.linea:nth-child(4) {
+  left: 54%; /* Ajusta el espacio entre la segunda y tercera imagen */
+  background-color: #02bc8a;
+}
+
+.progreso .ready {
+  width: 3rem;
+}
+
+.progreso .edit {
+  background-color: #507cdd;
+  border-radius: 2rem;
+  width: 3rem;
+}
+
+.progreso .more {
+  background-color: #d7d8da;
+  border-radius: 2rem;
+  width: 3rem;
+}
+
+.codigo {
+  height: 5rem;
+  max-width: 5.3rem;
+  background-color: #d5d5e1;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.codigo:focus {
+  border: 1px solid #233f78;
+  background-color: #d5d5e1;
+  box-shadow: none;
+}
+
+/* Efecto de Carga */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
+  backdrop-filter: blur(8px); /* Aplicar filtro de desenfoque */
+  z-index: 9998; /* Por debajo del loader pero encima del contenido */
+  display: none; /* Oculto por defecto */
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrar el elemento */
+  z-index: 9999; /* Por encima de todo el contenido */
+  display: none; /* Oculto por defecto */
+}
