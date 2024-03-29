@@ -1,0 +1,77 @@
+/* HOME TRANSFERENCIAS */
+
+/* MAIN */
+
+.transfer-unica h1 {
+  font-size: 2rem;
+}
+
+.saldo {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-image: url(../img/elipseFondo.svg);
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  background-position: -30%;
+  background-color: #5252ff;
+  height: 12rem;
+  color: #ffffff;
+  border-radius: 1.5rem;
+}
+
+.saldo img {
+  position: absolute;
+  left: -12%;
+  height: 13rem;
+  margin-top: -1.6rem;
+}
+
+.texto {
+  font-size: 1.2rem;
+}
+
+.monto {
+  font-size: 2.5rem;
+}
+
+.formulario {
+  margin: 3.5rem 0;
+}
+
+.leyenda {
+  font-size: 1.3rem;
+  color: #ffffff;
+  background-color: black;
+  padding: 1.5rem;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.contenido-form {
+  border: 1px solid #a0a0a08f;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 15px #00000040;
+  color: #4d4d4d;
+}
+
+.tipo-transfer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid #a0a0a08f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tipo-transfer:last-of-type {
+  border: none;
+}
+
+.tipo-transfer input {
+  height: 3rem;
+}
+
+.formulario button {
+  margin-top: 26rem;
+}

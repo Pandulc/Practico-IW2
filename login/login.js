@@ -5,6 +5,9 @@ var loading = document.getElementById("loader");
 var overlay = document.getElementById("overlay");
 var mensajeError = document.getElementById("mensaje-error");
 
+// Limpio el localStorage con el cierre de sesion
+localStorage.clear();
+
 user.addEventListener("input", () => {
   checkInputs();
 });
@@ -46,7 +49,7 @@ botonSubmit.addEventListener("click", () => {
   setTimeout(() => {
     loading.style.display = "none";
     overlay.style.display = "none";
-    window.location.href = "homeTransferencia.html";
+    window.location.href = "../homeT/homeTransferencia.html";
     return;
   }, 1000);
 });

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinatario Unico</title>
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/utilities.css" />
+    <link rel="stylesheet" href="transferUnicaMonto.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <iframe
+        id="header"
+        src="../../iframes/header.html"
+        width="100%"
+        frameborder="0"
+      ></iframe>
+    </header>
+
+    <main class="contenedor">
+      <div class="transfer-unica">
+        <h1 class="fw-600 montserrat">Transferir Dinero</h1>
+
+        <div class="barra-progreso">
+          <iframe
+            id="barra-progreso"
+            src="../../iframes/barraProgreso.html"
+            height="31rem"
+            width="100%"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+
+      <form class="formulario">
+        <div class="saldo">
+          <img src="../../img/elipseFondoGrande2.svg" alt="" />
+          <div class="dinero-disponible">
+            <p class="texto lato fw-700">Dinero Disponible</p>
+            <p id="monto-disponible" class="monto lato fw-700"></p>
+          </div>
+          <div class="monto-ingresado">
+            <p id="signo" class="lato fw-700">$</p>
+            <input
+              class="lato fw-700"
+              id="monto-ingresado"
+              type="text"
+              placeholder="0,00"
+            />
+          </div>
+          <p class="lato fw-700">¿Cuánto querés transferir?</p>
+        </div>
+
+        <div class="impuesto lato fw-600">
+          <div class="imagen">
+            <img src="../../img/impuesto.svg" alt="info.png" />
+            <p>Impuestos</p>
+          </div>
+          <div class="monto-impuesto">
+            <p>ARS $</p>
+            <p id="impuesto"></p>
+          </div>
+        </div>
+
+        <div class="comentario">
+          <input
+            class="impuesto lato fw-600"
+            type="text"
+            placeholder="Añadir mensaje"
+          />
+          <img src="../../img/editComent.svg" alt="editar.png" />
+        </div>
+
+        <button class="boton1 fw-700 montserrat" type="submit">
+          Siguiente
+        </button>
+      </form>
+
+      <script src="transferUnicaMonto.js"></script>
+    </main>
+  </body>
+</html>

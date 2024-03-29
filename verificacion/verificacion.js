@@ -1,16 +1,41 @@
 var campos = document.querySelectorAll(".codigo");
 var botonConf;
+var botonCanc;
+const opcionesMoneda = {
+  style: "currency",
+  currency: "ARS",
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+};
 var botonReenvio = document.getElementById("reCod");
 var timer = document.getElementById("timer");
 var tiempoRestante = 20;
 var loading = document.getElementById("loader");
 var overlay = document.getElementById("overlay");
-const iframe = document.getElementById("footer");
+const iframeHead = document.getElementById("header");
+const iframeFooter = document.getElementById("footer");
 
-iframe.addEventListener("load", function () {
+iframeHead.addEventListener("load", () => {
+  var atras = iframeHead.contentDocument.getElementById("atras");
+  var logo = iframeHead.contentDocument.getElementById("logo");
+
+  atras.addEventListener("click", () => {
+    event.preventDefault();
+    window.location.href = "../confirmacion/transferConfirmacion.html";
+  });
+
+  logo.addEventListener("click", () => {
+    event.preventDefault();
+    window.location.href = "../homeT/homeTransferencia.html";
+  });
+});
+
+iframeFooter.addEventListener("load", function () {
   // Cargamos el boton
-  botonConf = iframe.contentDocument.getElementById("btnConf");
+  botonConf = iframeFooter.contentDocument.getElementById("btnConf");
+  botonCanc = iframeFooter.contentDocument.getElementById("btnCanc");
   botonConf.disabled = true;
+
   // Validacion del codigo de verificacion
   campos.forEach((campo, index) => {
     // Validar entrada numerica y pasar al siguiente campo
@@ -55,6 +80,24 @@ iframe.addEventListener("load", function () {
       overlay.style.display = "none";
       window.location.href = "../resumen/resumen.html";
     }, 1000);
+  });
+
+  botonCanc.addEventListener("click", function () {
+    event.preventDefault();
+
+    var saldo = parseFloat(
+      localStorage.getItem("saldo").replace(/ARS|\$|\./g, "")
+    );
+
+    var montoGuardado = parseFloat(localStorage.getItem("monto"));
+
+    saldo = saldo + montoGuardado + montoGuardado * 0.05;
+
+    saldo = "ARS " + saldo.toLocaleString("es-AR", opcionesMoneda);
+
+    localStorage.setItem("saldo", saldo);
+
+    window.location.href = "../homeT/homeTransferencia.html";
   });
 
   // Temporizador para reenvio de codigo

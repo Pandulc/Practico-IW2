@@ -1,0 +1,69 @@
+/* CONFIRMACION DE TRANSFERENCIA */
+
+/* MAIN */
+
+.transfer-unica h1 {
+  font-size: 2rem;
+}
+
+#mensaje {
+  margin-top: 0.8rem;
+  margin-right: 2.3rem;
+  text-align: right;
+  color: #507cdd;
+}
+
+.transfer-unica p {
+  margin-top: 2.9rem;
+  font-size: 1.2rem;
+  color: #4d4d4d;
+}
+
+.transfer-unica p:last-of-type {
+  margin: 0;
+}
+
+.transfer-unica p span {
+  color: #311b92;
+}
+
+.metodos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.boton-metodo {
+  margin-top: 1rem;
+  display: block;
+  width: 24.5rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4d4d4d;
+}
+
+.boton img {
+  margin-right: 1rem;
+}
+
+#img-mail {
+  margin: 0;
+}
+
+.whatsapp {
+  color: #507cdd;
+}
+
+button {
+  margin-top: 27.5rem;
+}

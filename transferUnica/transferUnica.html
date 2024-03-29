@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Destinatario Unico</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/utilities.css" />
-    <link rel="stylesheet" href="/css/homeT.css" />
+    <link rel="stylesheet" href="transferUnica.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -18,48 +18,57 @@
   </head>
   <body>
     <header>
-      <div class="barra">
-        <a href="index.html">
-          <img src="img/atras.svg" alt="" />
-        </a>
-        <div class="logo">
-          <a href="homeTransferencia.html">
-            <img src="img/LogoMin.png" alt="" />
-            <p class="fw-700 montserrat">W I B O N D</p>
-          </a>
-        </div>
-      </div>
+      <iframe
+        id="header"
+        src="../iframes/header.html"
+        width="100%"
+        frameborder="0"
+      ></iframe>
     </header>
 
     <main class="contenedor">
       <div class="transfer-unica">
         <h1 class="fw-600 montserrat">Transferir Dinero</h1>
+
+        <div class="barra-progreso">
+          <iframe
+            src="../iframes/barraProgreso.html"
+            height="31rem"
+            width="100%"
+            frameborder="0"
+          ></iframe>
+        </div>
+
         <div class="saldo">
-          <img src="img/EllipseFondo2.svg" alt="" />
+          <img src="../img/EllipseFondo2.svg" alt="" />
           <p class="texto lato fw-700">Dinero Disponible</p>
-          <p class="monto lato fw-700">ARS $ 1.236,00</p>
+          <p id="monto" class="monto lato fw-700"></p>
         </div>
       </div>
       <form class="formulario">
         <div class="contenido-form">
           <div class="leyenda">
-            <legend class="fw-700 montserrat">Tipo de Destino</legend>
+            <legend class="fw-700 montserrat">Tipo de Cuenta</legend>
           </div>
           <div class="tipo-transfer">
-            <label for="unico">Destinatario Unico</label>
-            <input type="radio" id="unico" name="seleccion" />
+            <label for="wibond">Wibond</label>
+            <input type="radio" id="wibond" name="seleccion" />
           </div>
           <div class="tipo-transfer">
-            <label for="multiple">Multiples Destinatarios</label>
-            <input type="radio" id="multiple" name="seleccion" />
+            <label for="bancaria">Cuenta Bancaria</label>
+            <input type="radio" id="bancaria" name="seleccion" />
           </div>
         </div>
-        <button class="boton1 fw-700 montserrat" type="submit">
+
+        <p class="montserrat fw-600">¿Quién recibe la transferencia?</p>
+        <input class="destinatario lato fw-400" type="text" />
+
+        <button class="boton1 montserrat fw-700" type="submit">
           Siguiente
         </button>
       </form>
 
-      <script src="js/homeT.js"></script>
+      <script src="transferUnica.js"></script>
     </main>
   </body>
 </html>

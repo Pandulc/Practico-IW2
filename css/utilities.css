@@ -25,10 +25,6 @@ header {
   margin: auto;
 }
 
-.mt-f {
-  margin-top: calc(60%);
-}
-
 /** Utilidades **/
 .fw-400 {
   font-weight: 400;
@@ -96,7 +92,7 @@ header {
 }
 
 .subir-archivo {
-  display: block;
+  display: flex;
   width: 60%;
   height: 4rem;
   background-color: #507cdd;
@@ -139,8 +135,9 @@ header {
   height: 1.4rem;
 }
 
-.logo {
+.logo a {
   display: flex;
+  text-decoration: none;
   justify-content: space-between;
   align-items: center;
   color: black;
@@ -149,4 +146,54 @@ header {
 .logo p {
   font-size: 1.4rem;
   margin: 0;
+}
+
+/** Barra Progreso **/
+
+.barra-progreso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 4rem;
+}
+
+.progreso {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.linea {
+  position: absolute;
+  top: 50%;
+  width: 25%; /* La mitad del espacio entre las imágenes */
+  height: 0.3rem; /* Grosor de la línea */
+  background-color: #d7d8da; /* Color de la línea */
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.linea:nth-child(2) {
+  left: 21%; /* Ajusta el espacio entre la primera y segunda imagen */
+}
+
+.linea:nth-child(4) {
+  left: 54%; /* Ajusta el espacio entre la segunda y tercera imagen */
+}
+
+.progreso .ready {
+  width: 3rem;
+}
+
+.progreso .edit {
+  background-color: #507cdd;
+  border-radius: 2rem;
+  width: 3rem;
+}
+
+.progreso .more {
+  background-color: #d7d8da;
+  border-radius: 2rem;
+  width: 3rem;
 }

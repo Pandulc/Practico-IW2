@@ -4,9 +4,6 @@ html {
 }
 
 /** Generales **/
-header {
-  max-height: 8rem;
-}
 
 .container {
   max-width: 95%;
@@ -20,6 +17,10 @@ h1 {
 p {
   font-size: 1.2rem;
   font-style: normal;
+}
+
+.mt-f {
+  margin-top: 24rem;
 }
 
 /** Barra de Progreso **/
